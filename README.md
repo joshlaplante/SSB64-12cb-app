@@ -1,6 +1,6 @@
 ## SSB64 12 Character Battle App v1.0.0
 ***
-#### Installation
+### Installation
 
 ##### Android
 Download the .apk file on your phone/tablet and install the app.
