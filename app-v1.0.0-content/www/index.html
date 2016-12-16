@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data:" />
+        
+        <title>SSB64 12CB App</title>
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		
+    </head>
+    
+    <body>
+        
+		<!-- Start of page 1 -->
+		<div data-role="page" id="home">
+		
+			<div role="main" class="ui-content" id="home-content">
+				<div class="logo-container">
+					<img src="img/ssb-logo.png" class="logo">
+		        </div>
+		        <div class="home-container">
+			        <h1>SSB64 12CB</h1>
+			        <div class="blink">
+			        	<a class="page-link" href="#create-game-screen" data-transition="flip"><button type="button"  data-inline="true" class="create-game-button">Create New Game</button></a>
+					</div>
+		        </div>
+			</div><!-- /home-content -->
+		
+		</div><!-- /page 1 -->
+		
+		
+		<!-- Start of page 2 -->
+		<div data-role="page" id="create-game-screen">
+					
+			<div role="main" class="ui-content" id="create-game-screen-content">
+				<div class="logo-container">
+		    		<img src="img/ssb-logo.png" class="logo">
+		        </div>
+		        <div class="create-game-container">
+			        <h1>SSB64 12CB</h1>
+			        <div>
+			        	<h3>Enter Player 1 Name</h3>
+			        	<input data-wrapper-class="name-input" type="text" id="player1-entry" maxlength="40">
+			        </div>
+			        <div>
+			        	<h3>Enter Player 2 Name</h3>
+			        	<input data-wrapper-class="name-input" type="text" id="player2-entry" maxlength="40">
+			        </div>
+			        <div class="blink">
+				        	<a class="page-link" href="#game-screen" data-transition="slide"><button type="button" data-inline="true" class="lets-go-button">Let's Go!</button></a>
+					</div>
+				</div>
+			</div><!-- /create-game-screen-content -->
+			
+		</div><!-- /page 2 -->
+		
+		
+		<!-- Start of page 3 -->
+		<div data-role="page" id="game-screen">
+		
+			<div role="main" class="ui-content" id="game-screen-content">
+				
+		        <div class="game-container">
+		        	<div class="player-container">
+		        		<div class="game-text-container">
+			        		<h2 class="player-name-text" id="player1-name">Player 1</h2>
+			        	</div>
+			        	<div class="character-container">
+				        	<div class="char-row">
+				        		<img src="img/ssb64chars/luigi.png" class="char-img1" id="p1-luigi">
+				        		<img src="img/ssb64chars/mario.png" class="char-img1" id="p1-mario">
+				        		<img src="img/ssb64chars/dk.png" class="char-img1" id="p1-dk">
+				        		<img src="img/ssb64chars/link.png" class="char-img1" id="p1-link">
+				        		<img src="img/ssb64chars/samus.png" class="char-img1" id="p1-samus">
+				        		<img src="img/ssb64chars/falcon.png" class="char-img1" id="p1-falcon">
+				        	</div><!-- /char-row -->
+				        	<div class="stock-row">
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-luigi-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-luigi-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-luigi-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-luigi-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-luigi-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-mario-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-mario-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-mario-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-mario-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-mario-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-dk-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-dk-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-dk-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-dk-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-dk-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-link-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-link-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-link-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-link-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-link-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-samus-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-samus-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-samus-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-samus-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-samus-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-falcon-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-falcon-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-falcon-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-falcon-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-falcon-stock5">
+				        		</div>
+				        	</div><!-- /stock-row -->
+				        	<div class="char-row">
+				        		<img src="img/ssb64chars/ness.png" class="char-img1" id="p1-ness">
+				        		<img src="img/ssb64chars/yoshi.png" class="char-img1" id="p1-yoshi">
+				        		<img src="img/ssb64chars/kirby.png" class="char-img1" id="p1-kirby">
+				        		<img src="img/ssb64chars/fox.png" class="char-img1" id="p1-fox">
+				        		<img src="img/ssb64chars/pikachu.png" class="char-img1" id="p1-pikachu">
+				        		<img src="img/ssb64chars/jigglypuff.png" class="char-img1" id="p1-jigglypuff">
+				        	</div><!-- /char-row -->
+				        	<div class="stock-row">
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-ness-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-ness-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-ness-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-ness-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-ness-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-yoshi-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-yoshi-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-yoshi-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-yoshi-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-yoshi-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-kirby-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-kirby-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-kirby-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-kirby-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-kirby-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-fox-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-fox-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-fox-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-fox-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-fox-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-pikachu-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-pikachu-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-pikachu-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-pikachu-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-pikachu-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-jigglypuff-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-jigglypuff-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-jigglypuff-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-jigglypuff-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p1-jigglypuff-stock5">
+				        		</div>
+				        	</div><!-- /stock-row -->
+				        </div><!-- /character-container -->
+				        <div class="game-text-container">
+				        	<h3 class="stock-count-text" id="p1-stock-count">Stock Count: 60</h3>
+				        </div>
+				    </div><!-- /player-container -->
+				    
+				    <div class="player-container">
+			        	<div class="game-text-container">
+			        		<h2 class="player-name-text" id="player2-name">Player 2</h2>
+			        	</div>
+			        	<div class="character-container">
+				        	<div class="char-row">
+				        		<img src="img/ssb64chars/luigi.png" class="char-img2" id="p2-luigi">
+				        		<img src="img/ssb64chars/mario.png" class="char-img2" id="p2-mario">
+				        		<img src="img/ssb64chars/dk.png" class="char-img2" id="p2-dk">
+				        		<img src="img/ssb64chars/link.png" class="char-img2" id="p2-link">
+				        		<img src="img/ssb64chars/samus.png" class="char-img2" id="p2-samus">
+				        		<img src="img/ssb64chars/falcon.png" class="char-img2" id="p2-falcon">
+				        	</div><!-- /char-row -->
+				        	<div class="stock-row">
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-luigi-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-luigi-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-luigi-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-luigi-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-luigi-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-mario-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-mario-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-mario-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-mario-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-mario-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-dk-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-dk-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-dk-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-dk-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-dk-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-link-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-link-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-link-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-link-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-link-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-samus-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-samus-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-samus-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-samus-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-samus-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-falcon-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-falcon-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-falcon-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-falcon-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-falcon-stock5">
+				        		</div>
+				        	</div><!-- /stock-row -->
+				        	<div class="char-row">
+				        		<img src="img/ssb64chars/ness.png" class="char-img2" id="p2-ness">
+				        		<img src="img/ssb64chars/yoshi.png" class="char-img2" id="p2-yoshi">
+				        		<img src="img/ssb64chars/kirby.png" class="char-img2" id="p2-kirby">
+				        		<img src="img/ssb64chars/fox.png" class="char-img2" id="p2-fox">
+				        		<img src="img/ssb64chars/pikachu.png" class="char-img2" id="p2-pikachu">
+				        		<img src="img/ssb64chars/jigglypuff.png" class="char-img2" id="p2-jigglypuff">
+				        	</div><!-- /char-row -->
+				        	<div class="stock-row">
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-ness-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-ness-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-ness-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-ness-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-ness-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-yoshi-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-yoshi-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-yoshi-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-yoshi-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-yoshi-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-kirby-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-kirby-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-kirby-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-kirby-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-kirby-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-fox-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-fox-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-fox-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-fox-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-fox-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-pikachu-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-pikachu-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-pikachu-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-pikachu-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-pikachu-stock5">
+				        		</div>
+				        		<div class="stock-box">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-jigglypuff-stock1">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-jigglypuff-stock2">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-jigglypuff-stock3">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-jigglypuff-stock4">
+				        			<img src="img/ssb-logo.png" class="stock-icon" id="p2-jigglypuff-stock5">
+				        		</div>
+				        	</div><!-- /stock-row -->
+			        	</div>
+				        <div class="game-text-container">
+				        	<h3 class="stock-count-text" id="p2-stock-count">Stock Count: 60</h3>
+				        </div>
+					</div><!-- /character-container -->
+				</div><!-- /player-container -->
+			</div><!-- /game-screen-content -->
+		
+		</div><!-- /page 3 -->
+        
+    </body>
+</html>
