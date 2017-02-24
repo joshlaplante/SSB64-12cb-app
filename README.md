@@ -1,4 +1,5 @@
 ## SSB64 12 Character Battle App v1.0.0
+A mobile app to track 12 Character Battle sets for Super Smash Bros 64
 ***
 ### Installation
 
